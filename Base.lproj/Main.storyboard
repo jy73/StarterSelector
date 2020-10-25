@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarterSelector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon_background" translatesAutoresizingMaskIntoConstraints="NO" id="pkp-jk-9AR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="omg-2m-wNB">
+                                <rect key="frame" x="22.5" y="195.5" width="330" height="276"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="276" id="YPd-8e-nQH"/>
+                                    <constraint firstAttribute="width" constant="330" id="nby-AI-sNl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syg-Mi-PuA">
+                                <rect key="frame" x="105.5" y="524" width="164" height="50"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="29"/>
+                                <state key="normal" title="I Choose You!">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rz8-W9-cPf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxX-em-YoV">
+                                <rect key="frame" x="61" y="116.5" width="253" height="47"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Starter Selector">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="MarkerFelt-Wide"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="gyN-F2-uwP">
+                                <rect key="frame" x="83" y="582" width="209" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ico-gP-aPC">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Gen 1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Gen1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uDo-A2-G1l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9q-rd-IWj">
+                                        <rect key="frame" x="83" y="0.0" width="41" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Gen 2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Gen2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tvy-J8-WTm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNY-nu-KG8">
+                                        <rect key="frame" x="168" y="0.0" width="41" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <state key="normal" title="Gen 3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Gen3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CM8-TE-Bsv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="syg-Mi-PuA" firstAttribute="top" secondItem="omg-2m-wNB" secondAttribute="bottom" constant="52.5" id="AND-sH-dwN"/>
+                            <constraint firstItem="syg-Mi-PuA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DuU-43-MPd"/>
+                            <constraint firstItem="gyN-F2-uwP" firstAttribute="top" secondItem="syg-Mi-PuA" secondAttribute="bottom" constant="8" id="Fkg-Mv-l5L"/>
+                            <constraint firstItem="pkp-jk-9AR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IXw-cm-FZ5"/>
+                            <constraint firstItem="omg-2m-wNB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nid-Ji-DIu"/>
+                            <constraint firstItem="omg-2m-wNB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R9b-eA-cer"/>
+                            <constraint firstItem="gyN-F2-uwP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dCk-sv-rHi"/>
+                            <constraint firstAttribute="bottom" secondItem="pkp-jk-9AR" secondAttribute="bottom" id="fzC-ES-REg"/>
+                            <constraint firstItem="pkp-jk-9AR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gwM-an-Gsa"/>
+                            <constraint firstAttribute="trailing" secondItem="pkp-jk-9AR" secondAttribute="trailing" id="rM4-r3-5s6"/>
+                            <constraint firstItem="pxX-em-YoV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tjU-6K-J4l"/>
+                            <constraint firstItem="omg-2m-wNB" firstAttribute="top" secondItem="pxX-em-YoV" secondAttribute="bottom" constant="32" id="vWh-oU-bPn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Pokemon" destination="omg-2m-wNB" id="Tes-kw-q8V"/>
+                        <outlet property="StarterSelector" destination="pxX-em-YoV" id="3Kr-OC-EWP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2" width="96" height="96"/>
+        <image name="pokemon_background" width="748" height="468"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
